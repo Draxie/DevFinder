@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevFinder</title>
+
+    <link
+      rel="stylesheet"
+      href="css/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/light.css"
+      media="(pref                                             ers-color-scheme: no-preference), (prefers-color-scheme: light)"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="logo-and-theme">
+        <h1>devfinder</h1>
+        <dark-mode-toggle
+          appearence="switch"
+          dark="LIGHT"
+          light="DARK"
+        ></dark-mode-toggle>
+      </div>
+
+      <form id="searchForm" class="search-section" action="">
+        <img class="search-icon" src="/assets/icon-search.svg" alt="" />
+        <input
+          id="searchBar"
+          class="search-text"
+          type="text"
+          placeholder="Search GitHub username..."
+        />
+        <p id="errorText" class="error-text hidden">No results</p>
+        <input class="search-button" type="submit" value="Search" />
+      </form>
+
+      <section class="profile-info">
+        <div id="picHolder" class="pic-container">
+          <img src="/pic.png" alt="" class="dev-pic" />
+        </div>
+
+        <div class="name-date">
+          <h1 id="devName" class="dev-name">The Octocat</h1>
+          <a
+            id="tag"
+            target="_blank"
+            href="https://github.com/octocat"
+            class="tag"
+            >@octocat</a
+          >
+          <div class="date-container">
+            <p id="date" class="date">Joined 25 Jan 2011</p>
+          </div>
+        </div>
+
+        <p id="bio" class="bio no-bio">This profile has no bio</p>
+
+        <section class="number-section">
+          <div class="repos">
+            <p>Repos</p>
+            <span id="reposAmount">8</span>
+          </div>
+
+          <div class="followers">
+            <p>Followers</p>
+            <span id="followersAmount">3938</span>
+          </div>
+
+          <div class="following">
+            <p>Following</p>
+            <span id="followingAmount">9</span>
+          </div>
+        </section>
+
+        <section class="socials-section">
+          <div class="link-image">
+            <img src="/assets/icon-location.svg" alt="" />
+            <a id="location" class="location" target="_blank" href=""
+              >San Francisco</a
+            >
+          </div>
+          <div class="link-image unavailable">
+            <img src="/assets/icon-twitter.svg" alt="" />
+            <a id="twitter" target="_blank" href="">Not Available</a>
+          </div>
+          <div class="link-image">
+            <img src="/assets/icon-website.svg" alt="" />
+            <a id="website" target="_blank" href="https://github.blog"
+              >https://github.blog</a
+            >
+          </div>
+          <div class="link-image">
+            <img src="/assets/icon-company.svg" alt="" />
+            <a id="company" target="_blank" href="">@github</a>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="/js/script.js"></script>
+</html>

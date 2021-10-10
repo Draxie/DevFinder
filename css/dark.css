@@ -1,0 +1,14 @@
+:root {
+  --background-color: #141D2F;
+  --container-and-sbar-color: #1E2A47;
+  --text-color: #FFFFFF;
+  --date-color: #FFFFFF;
+  --numbers-and-name-color: #FFFFFF;
+  --button-and-tag-color: #0079FF;
+  --logo-color: #FFFFFF;
+  --choosen-scheme-text-color: #FFFFFF;
+  --number-section-color: #141D2F;
+  --shadow: rgba(0, 0, 0, 0.199);
+  --svg-color: invert(100%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(100%) contrast(100%);
+}
+/*# sourceMappingURL=dark.css.map */
